@@ -1,11 +1,18 @@
 .App {
-  text-align: center;
+ text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.App-Chica {
+  z-index: 5;
+  position: absolute;
+  width: 560px;
+  height: 600px;
+  left: 780px;
+  top:190px;
+  transform: matrix(-1,0,0,1,0,0);
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,19 +21,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Montserrat';
+  background-color: #ffffff;
+  width: 800px;
+  height: 47px;
+  left: 344px;
+  top:6px;
+  color: #4545bc;
 }
 
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +42,242 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+p{
+  position: absolute;
+  width: 290px;
+  height: 90px;
+  left: 270px;
+  top: 40px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+
+  color: rgba(69, 69, 188, 0.54);
+
+}
+
+.Ellipse{
+  position: absolute;
+  width: 810px;
+  height: 610px;
+  right: 0;
+  bottom: 0;
+}
+
+.Piso{
+  position: absolute;
+  width: 620px;
+  height: 40px;
+  left: 750px;
+  right: 0;
+  bottom: 0;
+}
+
+.Circulo{
+  box-sizing: border-box;
+position: absolute;
+width:849px;
+height: 645px;
+right: 0;
+bottom: 0;
+}
+
+.Avatar{
+  position: absolute;
+left: 82.86%;
+right: 14.43%;
+top: 3.61%;
+bottom: 91.57%;
+border-radius: 13px;
+}
+
+.Notificaciones{
+  position: absolute;
+left: 96%;
+right: 0%;
+top: 5%;
+bottom: 0%;
+}
+
+.Notificaciones-Letras{
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  left: 1240px;
+  top: 20px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height:50px;
+
+
+color: #88888E;
+}
+
+.Bregma{
+  
+position: absolute;
+width: 18%;
+left: 0;
+right: 84.17%;
+top: 0.09%;
+bottom: 86.3%;
+}
+
+.Items{
+  position: fixed;
+  width: 260px;
+  height: 660px;
+  top: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #5555D8;
+  color: #ffff;
+  border-radius: 55px 55px 0px 0px;
+  
+}
+
+
+.Cerrars{
+  
+  position: absolute;
+  bottom: 40px;
+  left: 70px;
+  
+}
+
+.Circulo1{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 890px;
+  top: 120px;
+}
+.Circulo2{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 540px;
+  top: 700px;
+}
+.Circulo3{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 530px;
+  top: 580px;
+}
+.Circulo4{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 560px;
+  top: 460px;
+}
+.Circulo5{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 620px;
+  top: 320px;
+}
+.Circulo6{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 730px;
+  top: 200px;
+}
+
+.Ubicacion{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 890px;
+  top: 120px;
+}
+
+.Grid{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 730px;
+  top: 200px;
+}
+
+.User{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 620px;
+  top: 320px;
+}
+
+.Users{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 560px;
+  top: 460px;
+}
+
+.Shopping{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 530px;
+  top: 580px;
+}
+
+.Share{
+  position: absolute;
+  width: 80px;
+  height: 90px;
+  left: 540px;
+  top: 700px;
+}
+
+.b1:hover .Ubicacion, .b1:hover .Circulo1{
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+
+.b2:hover .Grid, .b2:hover .Circulo6{
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+
+.b3:hover .User, .b3:hover .Circulo5{
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+
+.b4:hover .Users, .b4:hover .Circulo4{
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+
+.b5:hover .Shopping, .b5:hover .Circulo3{
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+
+.b6:hover .Share, .b6:hover .Circulo2{
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+
+input{
+  position: absolute;
+  width: 560px;
+  height: 20px;
+  top: 50px;
+  left: 600px;
+  
 }
